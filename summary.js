@@ -62,3 +62,25 @@
 // 15. Menghapus Remote Repository
 // git remote remove origin
 // Menghapus remote repository yang terhubung dengan repository lokal.
+
+// 1. Reset commit terakhir dan kembalikan perubahan ke staging area
+// Perintah ini akan mengembalikan commit terakhir ke staging area
+// git reset --soft HEAD~1;
+
+// 2. Unstage file yang tidak ingin dipush
+// Misalnya, jika ingin mengeluarkan "soal3.js" dari staging area
+// git reset soal3.js;
+
+// 3. Commit ulang perubahan yang tersisa
+// Setelah mengeluarkan file yang tidak diinginkan dari staging, lakukan commit ulang
+// git commit -m "Menambahkan soal1.js dan soal2.js";
+
+// 4. Push perubahan yang sudah di-commit
+// Mengirimkan perubahan ke remote repository, misalnya ke branch "main"
+// git push origin main;
+
+// 5. Jika ingin, commit file lain seperti soal3.js di kemudian hari
+// Menambahkan file soal3.js kembali ke staging area dan melakukan commit
+// git add soal3.js;
+// git commit -m "Menambahkan soal3.js";
+// git push origin main;
