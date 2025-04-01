@@ -32,3 +32,5 @@ const result2 = "wow";
 const result3 = "wow2";
 
 const result4 = "wow3";
+
+const result5 = "wowsekali";
